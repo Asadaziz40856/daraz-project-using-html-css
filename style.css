@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bg-white {
+  background: white;
+}
+
+.grid {
+  display: grid;
+}
+
+.size {
+  width: 90%;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+html,
+body {
+  background: #f5f5f5;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+header {
+  background-color: #f85606;
+  color: white;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  gap: 70px;
+  padding-block: 10px;
+
+  li {
+    list-style: none;
+  }
+}
+
+.navsheet {
+  display: flex;
+  justify-content: end;
+  padding-right: 160px;
+}
+
+.searchcontainer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  width: 130px;
+}
+
+.cart,
+.search {
+  width: 30px;
+}
+
+.searchicon {
+  width: 50%;
+  display: flex;
+
+  input {
+    padding-left: 15px;
+    font-size: 15px;
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+}
+
+.icon {
+  width: 10%;
+  padding-block: 4px;
+  background: #ffe1d2;
+  display: grid;
+  place-items: center;
+}
+
+.banner-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.banner-wrapper {
+  width: 95%;
+  position: relative;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.arrow-container {
+  position: absolute;
+  width: 100%;
+  padding-inline: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrows {
+  width: 15px !important;
+}
+
+.product-section {
+  width: 90%;
+  margin-inline: auto;
+  background: white;
+}
+
+.flash-container {
+  margin-top: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.onSale {
+  padding: 10px;
+  border-bottom: 1px solid rgba(102, 100, 100, 0.664);
+
+  button {
+    background: transparent;
+    outline: none;
+    border: 1px solid #f85606;
+    color: #f85606;
+    padding-inline: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-block: 6px;
+    font-size: 14px;
+  }
+}
+
+.sale {
+  margin-left: 10px;
+  color: #f85606;
+  font-size: 14px;
+}
+
+#salecontainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 10px;
+  gap: 15px;
+  background: #f5f5f5;
+
+  li {
+    background: white;
+  }
+}
+
+.product {
+  width: 100%;
+  h2 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .desc {
+    padding-inline: 5px;
+    s {
+      color: gray;
+    }
+    span {
+      color: #f85606;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.Categoriescontainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.small {
+  font-size: 10px;
+  color: gray !important;
+}
+
+.rating {
+  width: 12px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.Categoriesproduct {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2);
+  text-align: center;
+  font-size: 13px;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.Categoriesproduct li {
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+  transform-origin: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+  }
+}
+
+.Categoriesproduct img {
+  width: 70%;
+  object-fit: contain;
+  object-position: center center;
+  aspect-ratio: 6/5;
+}
+
+#jfy {
+  margin-top: 20px;
+}
+
+.loadsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  button {
+    width: 30%;
+    padding-block: 5px;
+    font-size: 15px;
+    border: 1px solid #1a9cb8;
+    color: #1a9cb8;
+  }
+}
+.Care {
+  margin-top: 60px;
+  color: #0f136d;
+  font-size: 16px;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 10rem;
+
+  h3 {
+    font-weight: 400;
+  }
+  ul {
+    padding-top: 7px;
+  }
+  ul li {
+    font-size: 12px;
+    width: fit-content;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.storeLinks {
+  gap: 0.5rem;
+  height: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.download {
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.download-center {
+  gap: 2rem;
+  width: 100%;
+}
+.happy {
+  width: 140px;
+}
+
+.happy p:first-child {
+  color: #f85606;
+  font-weight: 400;
+}
+
+.payments {
+  margin-top: 100px;
+  padding-block: 2rem;
+  gap: 12rem;
+  h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}
+
+.payment-methods {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+
+  img {
+    width: 50px;
+  }
+}
+
+.about-daraz {
+  padding: 3rem 0;
+  margin-top: 50px;
+  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #606060;
+    margin-bottom: 5px;
+  }
+  b {
+    color: #606060;
+    font-size: 10px;
+    display: block;
+    margin-top: 14px;
+    line-height: 16px;
+  }
+  span {
+    color: #606060;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  article {
+    line-height: 16px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
+
+.national-flags-container {
+  gap: 1rem;
+}
+
+.internation-flags {
+  gap: 5px;
+
+  img {
+    width: 30px;
+  }
+}
+
+.daraz {
+  margin-top: 50px;
+  padding-block: 2rem;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: rgba(128, 128, 128, 0.804);
+    font-size: 0.89rem;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.daraz > div {
+  gap: 10rem;
+}
+
+.socials {
+  gap: 1rem;
+  img {
+    width: 30px;
+  }
+}
+
+.copy {
+  color: rgba(128, 128, 128, 0.804);
+  font-size: 0.9rem;
+}
